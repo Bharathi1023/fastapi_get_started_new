@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8000'
+const BASE_URL = 'https://fastapi-get-started-gokul-n2w8-3l51t8rmt.vercel.app'
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {

@@ -9,7 +9,7 @@ app = FastAPI(title="TaskFlow API")
 # ── CORS – allow the React dev server ──────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],   # Vite default port
+    allow_origins=["*"],   # Allow all origins (localhost dev + any deployed frontend)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
